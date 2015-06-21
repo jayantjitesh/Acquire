@@ -1,0 +1,764 @@
+<score>
+	<state>
+		<board />
+		<player cash="6000" name="a">
+			<tile column="1" row="A" />
+			<tile column="2" row="A" />
+			<tile column="3" row="A" />
+			<tile column="4" row="A" />
+			<tile column="5" row="A" />
+			<tile column="6" row="A" />
+		</player>
+		<player cash="6000" name="b">
+			<tile column="7" row="A" />
+			<tile column="8" row="A" />
+			<tile column="9" row="A" />
+			<tile column="10" row="A" />
+			<tile column="11" row="A" />
+			<tile column="12" row="A" />
+		</player>
+		<player cash="6000" name="c">
+			<tile column="1" row="B" />
+			<tile column="2" row="B" />
+			<tile column="3" row="B" />
+			<tile column="4" row="B" />
+			<tile column="5" row="B" />
+			<tile column="6" row="B" />
+		</player>
+	</state>
+	<state>
+		<board>
+			<tile column="6" row="A" />
+		</board>
+		<player cash="5400" name="a">
+			<share count="3" name="American" />
+			<tile column="1" row="A" />
+			<tile column="2" row="A" />
+			<tile column="3" row="A" />
+			<tile column="4" row="A" />
+			<tile column="5" row="A" />
+			<tile column="7" row="B" />
+		</player>
+		<player cash="6000" name="b">
+			<tile column="7" row="A" />
+			<tile column="8" row="A" />
+			<tile column="9" row="A" />
+			<tile column="10" row="A" />
+			<tile column="11" row="A" />
+			<tile column="12" row="A" />
+		</player>
+		<player cash="6000" name="c">
+			<tile column="1" row="B" />
+			<tile column="2" row="B" />
+			<tile column="3" row="B" />
+			<tile column="4" row="B" />
+			<tile column="5" row="B" />
+			<tile column="6" row="B" />
+		</player>
+	</state>
+	<state>
+		<board>
+			<tile column="6" row="A" />
+			<tile column="12" row="A" />
+		</board>
+		<player cash="5400" name="a">
+			<share count="3" name="American" />
+			<tile column="1" row="A" />
+			<tile column="2" row="A" />
+			<tile column="3" row="A" />
+			<tile column="4" row="A" />
+			<tile column="5" row="A" />
+			<tile column="7" row="B" />
+		</player>
+		<player cash="5400" name="b">
+			<share count="3" name="American" />
+			<tile column="7" row="A" />
+			<tile column="8" row="A" />
+			<tile column="9" row="A" />
+			<tile column="10" row="A" />
+			<tile column="11" row="A" />
+			<tile column="8" row="B" />
+		</player>
+		<player cash="6000" name="c">
+			<tile column="1" row="B" />
+			<tile column="2" row="B" />
+			<tile column="3" row="B" />
+			<tile column="4" row="B" />
+			<tile column="5" row="B" />
+			<tile column="6" row="B" />
+		</player>
+	</state>
+	<state>
+		<board>
+			<tile column="12" row="A" />
+			<hotel name="American">
+				<tile column="6" row="A" />
+				<tile column="6" row="B" />
+				<tile column="7" row="B" />
+				<tile column="8" row="B" />
+				<tile column="9" row="B" />
+				<tile column="10" row="B" />
+				<tile column="11" row="B" />
+				<tile column="12" row="B" />
+				<tile column="1" row="C" />
+				<tile column="2" row="C" />
+				<tile column="3" row="C" />
+				<tile column="4" row="C" />
+				<tile column="5" row="C" />
+				<tile column="6" row="C" />
+			</hotel>
+		</board>
+		<player cash="5400" name="a">
+			<share count="3" name="American" />
+			<tile column="1" row="A" />
+			<tile column="2" row="A" />
+			<tile column="3" row="A" />
+			<tile column="4" row="A" />
+			<tile column="5" row="A" />
+			<tile column="7" row="B" />
+		</player>
+		<player cash="5400" name="b">
+			<share count="3" name="American" />
+			<tile column="7" row="A" />
+			<tile column="8" row="A" />
+			<tile column="9" row="A" />
+			<tile column="10" row="A" />
+			<tile column="11" row="A" />
+			<tile column="8" row="B" />
+		</player>
+		<player cash="5100" name="c">
+			<share count="4" name="American" />
+			<tile column="1" row="B" />
+			<tile column="2" row="B" />
+			<tile column="3" row="B" />
+			<tile column="4" row="B" />
+			<tile column="5" row="B" />
+			<tile column="9" row="B" />
+		</player>
+	</state>
+	<state>
+		<board>
+			<tile column="12" row="A" />
+			<hotel name="American">
+				<tile column="6" row="A" />
+				<tile column="6" row="B" />
+				<tile column="7" row="B" />
+				<tile column="8" row="B" />
+				<tile column="9" row="B" />
+				<tile column="10" row="B" />
+				<tile column="11" row="B" />
+				<tile column="12" row="B" />
+				<tile column="1" row="C" />
+				<tile column="2" row="C" />
+				<tile column="3" row="C" />
+				<tile column="4" row="C" />
+				<tile column="5" row="C" />
+				<tile column="6" row="C" />
+			</hotel>
+		</board>
+		<player cash="4200" name="a">
+			<share count="6" name="American" />
+			<tile column="1" row="A" />
+			<tile column="2" row="A" />
+			<tile column="3" row="A" />
+			<tile column="4" row="A" />
+			<tile column="5" row="A" />
+			<tile column="10" row="B" />
+		</player>
+		<player cash="5400" name="b">
+			<share count="3" name="American" />
+			<tile column="7" row="A" />
+			<tile column="8" row="A" />
+			<tile column="9" row="A" />
+			<tile column="10" row="A" />
+			<tile column="11" row="A" />
+			<tile column="8" row="B" />
+		</player>
+		<player cash="5100" name="c">
+			<share count="4" name="American" />
+			<tile column="1" row="B" />
+			<tile column="2" row="B" />
+			<tile column="3" row="B" />
+			<tile column="4" row="B" />
+			<tile column="5" row="B" />
+			<tile column="9" row="B" />
+		</player>
+	</state>
+	<state>
+		<board>
+			<tile column="12" row="A" />
+			<hotel name="American">
+				<tile column="6" row="A" />
+				<tile column="6" row="B" />
+				<tile column="7" row="B" />
+				<tile column="8" row="B" />
+				<tile column="9" row="B" />
+				<tile column="10" row="B" />
+				<tile column="11" row="B" />
+				<tile column="12" row="B" />
+				<tile column="1" row="C" />
+				<tile column="2" row="C" />
+				<tile column="3" row="C" />
+				<tile column="4" row="C" />
+				<tile column="5" row="C" />
+				<tile column="6" row="C" />
+			</hotel>
+		</board>
+		<player cash="4200" name="a">
+			<share count="6" name="American" />
+			<tile column="1" row="A" />
+			<tile column="2" row="A" />
+			<tile column="3" row="A" />
+			<tile column="4" row="A" />
+			<tile column="5" row="A" />
+			<tile column="10" row="B" />
+		</player>
+		<player cash="3900" name="b">
+			<share count="6" name="American" />
+			<tile column="7" row="A" />
+			<tile column="8" row="A" />
+			<tile column="9" row="A" />
+			<tile column="10" row="A" />
+			<tile column="11" row="A" />
+			<tile column="11" row="B" />
+		</player>
+		<player cash="5100" name="c">
+			<share count="4" name="American" />
+			<tile column="1" row="B" />
+			<tile column="2" row="B" />
+			<tile column="3" row="B" />
+			<tile column="4" row="B" />
+			<tile column="5" row="B" />
+			<tile column="9" row="B" />
+		</player>
+	</state>
+	<state>
+		<board>
+			<tile column="12" row="A" />
+			<hotel name="American">
+				<tile column="6" row="A" />
+				<tile column="6" row="B" />
+				<tile column="7" row="B" />
+				<tile column="8" row="B" />
+				<tile column="9" row="B" />
+				<tile column="10" row="B" />
+				<tile column="11" row="B" />
+				<tile column="12" row="B" />
+				<tile column="1" row="C" />
+				<tile column="2" row="C" />
+				<tile column="3" row="C" />
+				<tile column="4" row="C" />
+				<tile column="5" row="C" />
+				<tile column="6" row="C" />
+			</hotel>
+		</board>
+		<player cash="4200" name="a">
+			<share count="6" name="American" />
+			<tile column="1" row="A" />
+			<tile column="2" row="A" />
+			<tile column="3" row="A" />
+			<tile column="4" row="A" />
+			<tile column="5" row="A" />
+			<tile column="10" row="B" />
+		</player>
+		<player cash="3900" name="b">
+			<share count="6" name="American" />
+			<tile column="7" row="A" />
+			<tile column="8" row="A" />
+			<tile column="9" row="A" />
+			<tile column="10" row="A" />
+			<tile column="11" row="A" />
+			<tile column="11" row="B" />
+		</player>
+		<player cash="3300" name="c">
+			<share count="7" name="American" />
+			<tile column="1" row="B" />
+			<tile column="2" row="B" />
+			<tile column="3" row="B" />
+			<tile column="4" row="B" />
+			<tile column="5" row="B" />
+			<tile column="12" row="B" />
+		</player>
+	</state>
+	<state>
+		<board>
+			<tile column="12" row="A" />
+			<hotel name="American">
+				<tile column="6" row="A" />
+				<tile column="6" row="B" />
+				<tile column="7" row="B" />
+				<tile column="8" row="B" />
+				<tile column="9" row="B" />
+				<tile column="10" row="B" />
+				<tile column="11" row="B" />
+				<tile column="12" row="B" />
+				<tile column="1" row="C" />
+				<tile column="2" row="C" />
+				<tile column="3" row="C" />
+				<tile column="4" row="C" />
+				<tile column="5" row="C" />
+				<tile column="6" row="C" />
+			</hotel>
+		</board>
+		<player cash="2100" name="a">
+			<share count="9" name="American" />
+			<tile column="1" row="A" />
+			<tile column="2" row="A" />
+			<tile column="3" row="A" />
+			<tile column="4" row="A" />
+			<tile column="5" row="A" />
+			<tile column="1" row="C" />
+		</player>
+		<player cash="3900" name="b">
+			<share count="6" name="American" />
+			<tile column="7" row="A" />
+			<tile column="8" row="A" />
+			<tile column="9" row="A" />
+			<tile column="10" row="A" />
+			<tile column="11" row="A" />
+			<tile column="11" row="B" />
+		</player>
+		<player cash="3300" name="c">
+			<share count="7" name="American" />
+			<tile column="1" row="B" />
+			<tile column="2" row="B" />
+			<tile column="3" row="B" />
+			<tile column="4" row="B" />
+			<tile column="5" row="B" />
+			<tile column="12" row="B" />
+		</player>
+	</state>
+	<state>
+		<board>
+			<tile column="12" row="A" />
+			<hotel name="American">
+				<tile column="6" row="A" />
+				<tile column="6" row="B" />
+				<tile column="7" row="B" />
+				<tile column="8" row="B" />
+				<tile column="9" row="B" />
+				<tile column="10" row="B" />
+				<tile column="11" row="B" />
+				<tile column="12" row="B" />
+				<tile column="1" row="C" />
+				<tile column="2" row="C" />
+				<tile column="3" row="C" />
+				<tile column="4" row="C" />
+				<tile column="5" row="C" />
+				<tile column="6" row="C" />
+			</hotel>
+		</board>
+		<player cash="2100" name="a">
+			<share count="9" name="American" />
+			<tile column="1" row="A" />
+			<tile column="2" row="A" />
+			<tile column="3" row="A" />
+			<tile column="4" row="A" />
+			<tile column="5" row="A" />
+			<tile column="1" row="C" />
+		</player>
+		<player cash="1800" name="b">
+			<share count="9" name="American" />
+			<tile column="7" row="A" />
+			<tile column="8" row="A" />
+			<tile column="9" row="A" />
+			<tile column="10" row="A" />
+			<tile column="11" row="A" />
+			<tile column="2" row="C" />
+		</player>
+		<player cash="3300" name="c">
+			<share count="7" name="American" />
+			<tile column="1" row="B" />
+			<tile column="2" row="B" />
+			<tile column="3" row="B" />
+			<tile column="4" row="B" />
+			<tile column="5" row="B" />
+			<tile column="12" row="B" />
+		</player>
+	</state>
+	<state>
+		<board>
+			<tile column="12" row="A" />
+			<hotel name="American">
+				<tile column="6" row="A" />
+				<tile column="6" row="B" />
+				<tile column="7" row="B" />
+				<tile column="8" row="B" />
+				<tile column="9" row="B" />
+				<tile column="10" row="B" />
+				<tile column="11" row="B" />
+				<tile column="12" row="B" />
+				<tile column="1" row="C" />
+				<tile column="2" row="C" />
+				<tile column="3" row="C" />
+				<tile column="4" row="C" />
+				<tile column="5" row="C" />
+				<tile column="6" row="C" />
+			</hotel>
+		</board>
+		<player cash="2100" name="a">
+			<share count="9" name="American" />
+			<tile column="1" row="A" />
+			<tile column="2" row="A" />
+			<tile column="3" row="A" />
+			<tile column="4" row="A" />
+			<tile column="5" row="A" />
+			<tile column="1" row="C" />
+		</player>
+		<player cash="1800" name="b">
+			<share count="9" name="American" />
+			<tile column="7" row="A" />
+			<tile column="8" row="A" />
+			<tile column="9" row="A" />
+			<tile column="10" row="A" />
+			<tile column="11" row="A" />
+			<tile column="2" row="C" />
+		</player>
+		<player cash="2400" name="c">
+			<share count="7" name="American" />
+			<share count="3" name="Continental" />
+			<tile column="1" row="B" />
+			<tile column="2" row="B" />
+			<tile column="3" row="B" />
+			<tile column="4" row="B" />
+			<tile column="5" row="B" />
+			<tile column="3" row="C" />
+		</player>
+	</state>
+	<state>
+		<board>
+			<tile column="12" row="A" />
+			<tile column="1" row="C" />
+			<hotel name="American">
+				<tile column="6" row="A" />
+				<tile column="6" row="B" />
+				<tile column="7" row="B" />
+				<tile column="8" row="B" />
+				<tile column="9" row="B" />
+				<tile column="10" row="B" />
+				<tile column="11" row="B" />
+				<tile column="12" row="B" />
+				<tile column="1" row="C" />
+				<tile column="2" row="C" />
+				<tile column="3" row="C" />
+				<tile column="4" row="C" />
+				<tile column="5" row="C" />
+				<tile column="6" row="C" />
+			</hotel>
+		</board>
+		<player cash="1200" name="a">
+			<share count="9" name="American" />
+			<share count="3" name="Continental" />
+			<tile column="1" row="A" />
+			<tile column="2" row="A" />
+			<tile column="3" row="A" />
+			<tile column="4" row="A" />
+			<tile column="5" row="A" />
+			<tile column="4" row="C" />
+		</player>
+		<player cash="1800" name="b">
+			<share count="9" name="American" />
+			<tile column="7" row="A" />
+			<tile column="8" row="A" />
+			<tile column="9" row="A" />
+			<tile column="10" row="A" />
+			<tile column="11" row="A" />
+			<tile column="2" row="C" />
+		</player>
+		<player cash="2400" name="c">
+			<share count="7" name="American" />
+			<share count="3" name="Continental" />
+			<tile column="1" row="B" />
+			<tile column="2" row="B" />
+			<tile column="3" row="B" />
+			<tile column="4" row="B" />
+			<tile column="5" row="B" />
+			<tile column="3" row="C" />
+		</player>
+	</state>
+	<state>
+		<board>
+			<tile column="12" row="A" />
+			<hotel name="American">
+				<tile column="6" row="A" />
+				<tile column="6" row="B" />
+				<tile column="7" row="B" />
+				<tile column="8" row="B" />
+				<tile column="9" row="B" />
+				<tile column="10" row="B" />
+				<tile column="11" row="B" />
+				<tile column="12" row="B" />
+				<tile column="1" row="C" />
+				<tile column="2" row="C" />
+				<tile column="3" row="C" />
+				<tile column="4" row="C" />
+				<tile column="5" row="C" />
+				<tile column="6" row="C" />
+			</hotel>
+			<hotel name="Continental">
+				<tile column="1" row="C" />
+				<tile column="2" row="C" />
+				<tile column="3" row="C" />
+				<tile column="4" row="C" />
+				<tile column="5" row="C" />
+			</hotel>
+		</board>
+		<player cash="1200" name="a">
+			<share count="9" name="American" />
+			<share count="3" name="Continental" />
+			<tile column="1" row="A" />
+			<tile column="2" row="A" />
+			<tile column="3" row="A" />
+			<tile column="4" row="A" />
+			<tile column="5" row="A" />
+			<tile column="4" row="C" />
+		</player>
+		<player cash="600" name="b">
+			<share count="9" name="American" />
+			<share count="4" name="Continental" />
+			<tile column="7" row="A" />
+			<tile column="8" row="A" />
+			<tile column="9" row="A" />
+			<tile column="10" row="A" />
+			<tile column="11" row="A" />
+			<tile column="5" row="C" />
+		</player>
+		<player cash="2400" name="c">
+			<share count="7" name="American" />
+			<share count="3" name="Continental" />
+			<tile column="1" row="B" />
+			<tile column="2" row="B" />
+			<tile column="3" row="B" />
+			<tile column="4" row="B" />
+			<tile column="5" row="B" />
+			<tile column="3" row="C" />
+		</player>
+	</state>
+	<state>
+		<board>
+			<tile column="12" row="A" />
+			<hotel name="American">
+				<tile column="6" row="A" />
+				<tile column="6" row="B" />
+				<tile column="7" row="B" />
+				<tile column="8" row="B" />
+				<tile column="9" row="B" />
+				<tile column="10" row="B" />
+				<tile column="11" row="B" />
+				<tile column="12" row="B" />
+				<tile column="1" row="C" />
+				<tile column="2" row="C" />
+				<tile column="3" row="C" />
+				<tile column="4" row="C" />
+				<tile column="5" row="C" />
+				<tile column="6" row="C" />
+			</hotel>
+			<hotel name="Continental">
+				<tile column="1" row="C" />
+				<tile column="2" row="C" />
+				<tile column="3" row="C" />
+				<tile column="4" row="C" />
+				<tile column="5" row="C" />
+			</hotel>
+		</board>
+		<player cash="1200" name="a">
+			<share count="9" name="American" />
+			<share count="3" name="Continental" />
+			<tile column="1" row="A" />
+			<tile column="2" row="A" />
+			<tile column="3" row="A" />
+			<tile column="4" row="A" />
+			<tile column="5" row="A" />
+			<tile column="4" row="C" />
+		</player>
+		<player cash="600" name="b">
+			<share count="9" name="American" />
+			<share count="4" name="Continental" />
+			<tile column="7" row="A" />
+			<tile column="8" row="A" />
+			<tile column="9" row="A" />
+			<tile column="10" row="A" />
+			<tile column="11" row="A" />
+			<tile column="5" row="C" />
+		</player>
+		<player cash="900" name="c">
+			<share count="7" name="American" />
+			<share count="6" name="Continental" />
+			<tile column="1" row="B" />
+			<tile column="2" row="B" />
+			<tile column="3" row="B" />
+			<tile column="4" row="B" />
+			<tile column="5" row="B" />
+			<tile column="6" row="C" />
+		</player>
+	</state>
+	<state>
+		<board>
+			<tile column="12" row="A" />
+			<hotel name="American">
+				<tile column="6" row="A" />
+				<tile column="6" row="B" />
+				<tile column="7" row="B" />
+				<tile column="8" row="B" />
+				<tile column="9" row="B" />
+				<tile column="10" row="B" />
+				<tile column="11" row="B" />
+				<tile column="12" row="B" />
+				<tile column="1" row="C" />
+				<tile column="2" row="C" />
+				<tile column="3" row="C" />
+				<tile column="4" row="C" />
+				<tile column="5" row="C" />
+				<tile column="6" row="C" />
+			</hotel>
+			<hotel name="Continental">
+				<tile column="1" row="C" />
+				<tile column="2" row="C" />
+				<tile column="3" row="C" />
+				<tile column="4" row="C" />
+				<tile column="5" row="C" />
+			</hotel>
+		</board>
+		<player cash="0" name="a">
+			<share count="9" name="American" />
+			<share count="5" name="Continental" />
+			<tile column="1" row="A" />
+			<tile column="2" row="A" />
+			<tile column="3" row="A" />
+			<tile column="4" row="A" />
+			<tile column="5" row="A" />
+			<tile column="7" row="C" />
+		</player>
+		<player cash="600" name="b">
+			<share count="9" name="American" />
+			<share count="4" name="Continental" />
+			<tile column="7" row="A" />
+			<tile column="8" row="A" />
+			<tile column="9" row="A" />
+			<tile column="10" row="A" />
+			<tile column="11" row="A" />
+			<tile column="5" row="C" />
+		</player>
+		<player cash="900" name="c">
+			<share count="7" name="American" />
+			<share count="6" name="Continental" />
+			<tile column="1" row="B" />
+			<tile column="2" row="B" />
+			<tile column="3" row="B" />
+			<tile column="4" row="B" />
+			<tile column="5" row="B" />
+			<tile column="6" row="C" />
+		</player>
+	</state>
+	<state>
+		<board>
+			<tile column="12" row="A" />
+			<hotel name="American">
+				<tile column="6" row="A" />
+				<tile column="6" row="B" />
+				<tile column="7" row="B" />
+				<tile column="8" row="B" />
+				<tile column="9" row="B" />
+				<tile column="10" row="B" />
+				<tile column="11" row="B" />
+				<tile column="12" row="B" />
+				<tile column="1" row="C" />
+				<tile column="2" row="C" />
+				<tile column="3" row="C" />
+				<tile column="4" row="C" />
+				<tile column="5" row="C" />
+				<tile column="6" row="C" />
+			</hotel>
+			<hotel name="Continental">
+				<tile column="1" row="C" />
+				<tile column="2" row="C" />
+				<tile column="3" row="C" />
+				<tile column="4" row="C" />
+				<tile column="5" row="C" />
+			</hotel>
+		</board>
+		<player cash="0" name="a">
+			<share count="9" name="American" />
+			<share count="5" name="Continental" />
+			<tile column="1" row="A" />
+			<tile column="2" row="A" />
+			<tile column="3" row="A" />
+			<tile column="4" row="A" />
+			<tile column="5" row="A" />
+			<tile column="7" row="C" />
+		</player>
+		<player cash="0" name="b">
+			<share count="9" name="American" />
+			<share count="4" name="Continental" />
+			<share count="3" name="Festival" />
+			<tile column="7" row="A" />
+			<tile column="8" row="A" />
+			<tile column="9" row="A" />
+			<tile column="10" row="A" />
+			<tile column="11" row="A" />
+			<tile column="8" row="C" />
+		</player>
+		<player cash="900" name="c">
+			<share count="7" name="American" />
+			<share count="6" name="Continental" />
+			<tile column="1" row="B" />
+			<tile column="2" row="B" />
+			<tile column="3" row="B" />
+			<tile column="4" row="B" />
+			<tile column="5" row="B" />
+			<tile column="6" row="C" />
+		</player>
+	</state>
+	<state>
+		<board>
+			<tile column="12" row="A" />
+			<hotel name="American">
+				<tile column="6" row="A" />
+				<tile column="6" row="B" />
+				<tile column="7" row="B" />
+				<tile column="8" row="B" />
+				<tile column="9" row="B" />
+				<tile column="10" row="B" />
+				<tile column="11" row="B" />
+				<tile column="12" row="B" />
+				<tile column="1" row="C" />
+				<tile column="2" row="C" />
+				<tile column="3" row="C" />
+				<tile column="4" row="C" />
+				<tile column="5" row="C" />
+				<tile column="6" row="C" />
+			</hotel>
+		</board>
+		<player cash="0" name="a">
+			<share count="9" name="American" />
+			<share count="5" name="Continental" />
+			<tile column="1" row="A" />
+			<tile column="2" row="A" />
+			<tile column="3" row="A" />
+			<tile column="4" row="A" />
+			<tile column="5" row="A" />
+			<tile column="7" row="C" />
+		</player>
+		<player cash="0" name="b">
+			<share count="9" name="American" />
+			<share count="4" name="Continental" />
+			<share count="3" name="Festival" />
+			<tile column="7" row="A" />
+			<tile column="8" row="A" />
+			<tile column="9" row="A" />
+			<tile column="10" row="A" />
+			<tile column="11" row="A" />
+			<tile column="8" row="C" />
+		</player>
+		<player cash="0" name="c">
+			<share count="7" name="American" />
+			<share count="9" name="Continental" />
+			<tile column="1" row="B" />
+			<tile column="2" row="B" />
+			<tile column="3" row="B" />
+			<tile column="4" row="B" />
+			<tile column="5" row="B" />
+			<tile column="9" row="C" />
+		</player>
+	</state>
+</score>

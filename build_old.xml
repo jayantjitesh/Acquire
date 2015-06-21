@@ -1,0 +1,196 @@
+<project name="acquire" default="build" basedir=".">
+  
+  <import file="properties_old.xml" />
+
+  <!-- Board -->
+  <target name="build-board" description="--> build board module">
+    <mkdir dir="${src.out.dir}" />
+    <javac destdir="${src.out.dir}" excludes="**/package-info.java" includeantruntime="true">
+      <src path="${board.src.dir}" />
+      <classpath refid="all.libs" />
+    </javac>
+  </target>
+  
+  <target name="build-board-tests" depends="build-board" description="--> build board module tests">
+    <mkdir dir="${test.out.dir}" />
+    <javac destdir="${test.out.dir}" excludes="**/package-info.java" includeantruntime="true">
+      <src path="${board.test.dir}" />
+      <classpath>
+        <path refid="all.libs" />
+        <pathelement path="${src.out.dir}" />
+      </classpath>
+    </javac>
+  </target>
+  
+  <target name="build-board-harness" depends="build-board" description="--> build board module test harness">
+    <mkdir dir="${board.harness.out.dir}" />
+    <javac destdir="${board.harness.out.dir}" excludes="**/package-info.java" includeantruntime="true">
+      <src path="${board.harness.src.dir}" />
+      <classpath>
+        <path refid="all.libs" />
+        <pathelement path="${src.out.dir}" />
+      </classpath>
+    </javac>
+  </target>
+
+  <!-- Game State -->
+  <target name="build-game-state" depends="build-board" description="--> build game-state module">
+    <mkdir dir="${src.out.dir}" />
+    <javac destdir="${src.out.dir}" excludes="**/package-info.java" includeantruntime="true">
+      <src path="${game-state.src.dir}" />
+      <classpath>
+        <path refid="all.libs" />
+        <pathelement path="${src.out.dir}" />
+      </classpath>
+    </javac>
+  </target>
+  
+  <target name="build-game-state-tests" depends="build-game-state" description="--> build game-state module tests">
+    <mkdir dir="${test.out.dir}" />
+    <javac destdir="${test.out.dir}" excludes="**/package-info.java" includeantruntime="true">
+      <src path="${game-state.test.dir}" />
+      <classpath>
+        <path refid="all.libs" />
+        <pathelement path="${src.out.dir}" />
+      </classpath>
+    </javac>
+  </target>
+  
+  <target name="build-game-state-harness" depends="build-game-state" description="--> build game-state module test harness">
+    <mkdir dir="${game-state.harness.out.dir}" />
+    <javac destdir="${game-state.harness.out.dir}" excludes="**/package-info.java" includeantruntime="true">
+      <src path="${game-state.harness.src.dir}" />
+      <classpath>
+        <path refid="all.libs" />
+        <pathelement path="${src.out.dir}" />
+      </classpath>
+    </javac>
+  </target>
+
+  <target name="build" depends="build-board,build-game-state" description="--> build all modules">
+  </target>
+  
+  <!-- post-build task -->
+  <target name="test" depends="build-board-tests,build-game-state-tests" description="--> test the project (JUnit)">
+    <mkdir dir="${test.report.dir}" />
+    <mkdir dir="${working.dir}" />
+    <!-- test pure java code -->
+    <junit printsummary="on" fork="true" haltonfailure="false" includeantruntime="true" dir="${working.dir}">
+      <classpath>
+        <pathelement path="${toString:all.libs}" />
+        <pathelement path="${src.out.dir}" />
+        <pathelement path="${test.out.dir}" />
+        <pathelement path="${working.res.dir}" />
+      </classpath>
+
+      <formatter type="xml" />
+      <batchtest todir="${test.report.dir}">
+        <fileset dir="${game-state.test.dir}">
+	        <exclude name="**/*_*.java" />
+          <include name="**/*Test*.java" />
+        </fileset>
+        <fileset dir="${board.test.dir}">
+	        <exclude name="**/*_*.java" />
+          <include name="**/*Test*.java" />
+        </fileset>
+      </batchtest>
+    </junit>
+  </target>
+  
+  <target name="javadoc" depends="build">
+    <javadoc destdir="${doc.dir}" author="true" version="true" use="false" windowtitle="One Thousand One"
+	     defaultexcludes="yes">
+      <sourcePath path="${board.src.dir}" />
+      <sourcePath path="${game-state.src.dir}" />
+      <classpath path="${toString:all.libs}" />
+    </javadoc>
+  </target>
+  
+  <target name="clean" description="--> clean the project">
+    <delete includeemptydirs="true" quiet="true">
+      <fileset dir="${out.dir}" />
+      <fileset dir="${board.harness.out.dir}" />
+      <fileset dir="${game-state.harness.out.dir}" />
+      <fileset dir="${report.dir}" />
+      <fileset dir="${log.dir}" />
+      <fileset dir="${working.dir}" />
+      <fileset dir="${release.dir}" />
+      <fileset file="${board.harness.dir}/board-tester.jar" />
+      <fileset dir="${board.harness.dir}/${lib.dir}" />
+      <fileset file="${game-state.harness.dir}/state-tester.jar" />
+      <fileset dir="${game-state.harness.dir}/${lib.dir}" />
+    </delete>
+  </target>
+
+  <!-- official release -->
+  <target name="_setup-release">
+    <mkdir dir="${release.dir}" />
+
+    <copy todir="${release.lib.dir}" flatten="true">
+      <path refid="all.libs"/>
+    </copy>
+  </target>
+  
+  <target name="release" depends="build,_setup-release">
+    <property name="release.jar" value="${release.dir}/acquire.jar" />
+
+    <manifestclasspath property="all.libs" jarfile="${releases.jar}">
+      <classpath refid="all.libs"/>
+    </manifestclasspath>
+
+    <jar destfile="${release.jar}">
+      <fileset dir="${src.out.dir}" />
+      <manifest>
+        <attribute name="Main-Class" value="acquire.XXX" />
+        <attribute name="Class-Path" value="${all.libs}" />
+      </manifest>
+    </jar>
+  </target>
+
+  <target name="release-board-harness" depends="clean,build-board-harness,_setup-release">
+    <property name="board.harness.release.jar" value="${release.dir}/board-tester.jar" />
+
+    <manifestclasspath property="all.board.harness.libs" jarfile="${board.harness.releases.jar}">
+      <classpath refid="all.libs"/>
+    </manifestclasspath>
+
+    <jar destfile="${board.harness.release.jar}">
+      <fileset dir="${src.out.dir}" />
+      <fileset dir="${board.harness.out.dir}" />
+      <manifest>
+        <attribute name="Main-Class" value="acquire.testbed.TestBedMain" />
+        <attribute name="Class-Path" value="${all.board.harness.libs}" />
+      </manifest>
+    </jar>
+    <copy file="${board.harness.release.jar}" todir="${board.harness.dir}"/>
+    <copy todir="${board.harness.dir}/${lib.dir}">
+      <fileset dir="${release.lib.dir}"/>
+    </copy>
+  </target>
+
+  <target name="release-game-state-harness" depends="clean,build-game-state-harness,_setup-release">
+    <property name="game-state.harness.release.jar" value="${release.dir}/state-tester.jar" />
+
+    <manifestclasspath property="all.game-state.harness.libs" jarfile="${games-state.harness.releases.jar}">
+      <classpath refid="all.libs"/>
+    </manifestclasspath>
+
+    <jar destfile="${game-state.harness.release.jar}">
+      <fileset dir="${src.out.dir}" />
+      <fileset dir="${game-state.harness.out.dir}" />
+      <manifest>
+        <attribute name="Main-Class" value="acquire.testbed.TestBedMain" />
+        <attribute name="Class-Path" value="${all.game-state.harness.libs}" />
+      </manifest>
+    </jar>
+    <copy file="${game-state.harness.release.jar}" todir="${game-state.harness.dir}"/>
+    <copy todir="${game-state.harness.dir}/${lib.dir}">
+      <fileset dir="${release.lib.dir}"/>
+    </copy>
+  </target>
+
+  <target name="all" depends="clean,test,javadoc,release" description="--> clean and then run all targets (excluding harness releases)">
+    <!-- Targets depend on a full build -->
+  </target>
+
+</project>

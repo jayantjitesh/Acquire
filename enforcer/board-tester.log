@@ -1,0 +1,3 @@
+2013-03-26 01:20:27 INFO  AcquireMain:39 - Commnad line arguments: [-120, JJ, Jayant]
+2013-03-26 01:21:12 INFO  AcquireMain:39 - Commnad line arguments: [-ui, -120, JJ, Jayant]
+2013-03-26 01:21:14 FATAL BoardPanel:16 - Unexpected action type: INITIAL

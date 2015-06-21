@@ -1,0 +1,70 @@
+<project name="acquire-properties" basedir=".">
+  
+  <!-- Basic Directory Definitions -->
+  <property name="out.dir" value="bin" />
+  <property name="src.dir" value="src" />
+  <property name="src.out.dir" value="${out.dir}/${src.dir}" />
+  <property name="test.dir" value="test" />
+  <property name="test.src.dir" value="${test.dir}/${src.dir}" />
+  <property name="test.out.dir" value="${out.dir}/${test.dir}" />
+  <property name="log.dir" value="logs" />
+  <property name="working.dir" value="working" />
+  <property name="working.res.dir" value="${working.dir}/${res.dir}" />
+
+  <!-- modules -->
+  <property name="basics.dir" value="basics" />
+  <property name="basics.src.dir" value="${basics.dir}/${src.dir}" />
+  
+  <property name="board.dir" value="board" />
+  <property name="board.src.dir" value="${board.dir}/${src.dir}" />
+  
+  <property name="game-state.dir" value="state" />
+  <property name="game-state.src.dir" value="${game-state.dir}/${src.dir}" />
+  
+  <property name="player.dir" value="player" />
+  <property name="player.src.dir" value="${player.dir}/${src.dir}" />
+  
+  <property name="enforcer.dir" value="enforcer" />
+  <property name="enforcer.src.dir" value="${enforcer.dir}/${src.dir}" />
+  
+  <property name="game-tree.dir" value="game_tree" />
+  <property name="game-tree.src.dir" value="${game-tree.dir}/${src.dir}" />
+  
+  <!-- test harnesses -->
+  <property name="harness.release.dir" value="auxiliaries" />
+  
+  <property name="harness-helper.src.dir" value="harness_helper/${src.dir}" />
+  
+  <property name="player-proj.dir" value="project9" />
+  <property name="player.harness.dir" value="${player-proj.dir}/player-tester-code" />
+  <property name="player.harness.src.dir" value="${player.harness.dir}/${src.dir}" />
+  <property name="player.harness.out.dir" value="${player.harness.dir}/${out.dir}" />
+  <property name="player.harness.release.dir" value="${player-proj.dir}/${harness.release.dir}" />
+  
+  <property name="game-proj.dir" value="project9" />
+  <property name="game.harness.dir" value="${game-proj.dir}/game-tester-code" />
+  <property name="game.harness.src.dir" value="${game.harness.dir}/${src.dir}" />
+  <property name="game.harness.out.dir" value="${game.harness.dir}/${out.dir}" />
+  <property name="game.harness.release.dir" value="${game-proj.dir}/${harness.release.dir}" />
+    
+  <!-- Release Directory Definitions -->
+  <property name="release.dir" value="release" />
+  <property name="release.lib.dir" value="${release.dir}/Lib/" />
+  
+  <!-- Library Directory Definitions -->
+  <property name="lib.dir" value="Lib" />
+  <!-- all -->
+  <path id="libs">
+    <fileset dir="${lib.dir}" includes="*.jar" />
+  </path>
+
+  <path id="all.libs">
+    <pathelement path="${toString:libs}" />
+  </path>
+  
+  <!-- Report Directory Definitions -->
+  <property name="report.dir" value="report" />
+  <property name="test.report.dir" location="${report.dir}/junit" />
+  <property name="doc.dir" value="${report.dir}/docs" />
+
+</project>

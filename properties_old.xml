@@ -1,0 +1,52 @@
+<project name="acquire-properties" basedir=".">
+  
+  <!-- Basic Directory Definitions -->
+  <property name="out.dir" value="bin" />
+  <property name="src.dir" value="src" />
+  <property name="test.dir" value="test" />
+  <property name="src.out.dir" value="${out.dir}/${src.dir}" />
+  <property name="test.out.dir" value="${out.dir}/${test.dir}" />
+  <property name="log.dir" value="logs" />
+  <property name="working.dir" value="working" />
+  <property name="working.res.dir" value="${working.dir}/${res.dir}" />
+  <property name="implementation.dir" value="1" />
+  <property name="harness.dir" value="2" />
+
+  <!-- projects -->
+  <property name="board-proj.dir" value="project4" />
+  <property name="board.dir" value="${board-proj.dir}/${implementation.dir}" />
+  <property name="board.src.dir" value="${board.dir}/${src.dir}" />
+  <property name="board.test.dir" value="${board.dir}/${test.dir}" />
+  <property name="board.harness.dir" value="${board-proj.dir}/${harness.dir}" />
+  <property name="board.harness.src.dir" value="${board.harness.dir}/${src.dir}" />
+  <property name="board.harness.out.dir" value="${board.harness.dir}/${out.dir}" />
+  
+  <property name="game-state-proj.dir" value="project5" />
+  <property name="game-state.dir" value="${game-state-proj.dir}/${implementation.dir}" />
+  <property name="game-state.src.dir" value="${game-state.dir}/${src.dir}" />
+  <property name="game-state.test.dir" value="${game-state.dir}/${test.dir}" />
+  <property name="game-state.harness.dir" value="${game-state-proj.dir}/${harness.dir}" />
+  <property name="game-state.harness.src.dir" value="${game-state.harness.dir}/${src.dir}" />
+  <property name="game-state.harness.out.dir" value="${game-state.harness.dir}/${out.dir}" />
+  
+  <!-- Release Directory Definitions -->
+  <property name="release.dir" value="release" />
+  <property name="release.lib.dir" value="${release.dir}/lib/" />
+  
+  <!-- Library Directory Definitions -->
+  <property name="lib.dir" value="lib" />
+  <!-- all -->
+  <path id="libs">
+    <fileset dir="${lib.dir}" includes="*.jar" />
+  </path>
+
+  <path id="all.libs">
+    <pathelement path="${toString:libs}" />
+  </path>
+  
+  <!-- Report Directory Definitions -->
+  <property name="report.dir" value="report" />
+  <property name="test.report.dir" location="${report.dir}/junit" />
+  <property name="doc.dir" value="${report.dir}/docs" />
+
+</project>
